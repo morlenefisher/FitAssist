@@ -215,4 +215,4 @@ class FitAssistAbAndSquats extends FitAssistEvent {
 
 
 
-$cal = new GenerateCal();
+//$cal = new GenerateCal();
