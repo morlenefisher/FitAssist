@@ -37,10 +37,13 @@ class FitAssist {
   protected function getEvents() {
     foreach ($this->dates as $day => $date) {
       switch ($this->challenge) {
-        case 'plank':
+        case '30dayplank':
           $this->events[] = new FitAssistPlank($this->dates[$day], $day);
           break;
-        case 'abandsquats':
+        case '30dayabsandsquats':
+          $this->events[] = new FitAssistAbAndSquats($this->dates[$day], $day);
+          break;
+        case '30daybeachbody':
           $this->events[] = new FitAssistAbAndSquats($this->dates[$day], $day);
           break;
       }

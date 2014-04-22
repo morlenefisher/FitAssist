@@ -6,6 +6,7 @@
 
 if ($_POST) {
 require_once "../inc/fitassist.php";
+  print_r($_POST['challenge']);
 $cal = new FitAssist($_POST['challenge'], $_POST['start_date']);
 
 }
@@ -89,7 +90,7 @@ $cal = new FitAssist($_POST['challenge'], $_POST['start_date']);
 <!--          <p><a class="btn btn-default" href="#" role="button">Generate &raquo;</a></p>-->
           <form name="30DayChooser" ng-click="/"  method="POST">
             <input type="hidden" name="challenge" value="30dayplank" />
-            <div class="input-append date" id="dp3" data-date="<?php echo date('d M Y')?>" data-date-format="dd-mm-yyyy">
+            <div class="input-append date" id="dp1" data-date="<?php echo date('d M Y')?>" data-date-format="dd-mm-yyyy">
               <label>Choose start date</label>
               <input class="span2" size="16" type="text" value="<?php echo date('d M Y')?>">
               <span class="add-on"><i class="icon-th"></i></span>
@@ -104,7 +105,7 @@ $cal = new FitAssist($_POST['challenge'], $_POST['start_date']);
 <!--          <p><a class="btn btn-default" href="#" role="button">Generate &raquo;</a></p>-->
           <form name="30DayChooser" ng-click="/"  method="POST">
             <input type="hidden" name="challenge" value="30dayabsandsquats" />
-            <div class="input-append date" id="dp3" data-date="<?php echo date('d M Y')?>" data-date-format="dd-mm-yyyy">
+            <div class="input-append date" id="dp2" data-date="<?php echo date('d M Y')?>" data-date-format="dd-mm-yyyy">
               <label>Choose start date</label>
               <input class="span2" size="16" type="text" value="<?php echo date('d M Y')?>">
               <span class="add-on"><i class="icon-th"></i></span>
